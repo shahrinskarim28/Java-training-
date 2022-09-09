@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class OpenbrowserClass {
 
 	
@@ -25,33 +24,48 @@ public class OpenbrowserClass {
 	      driver.get("https://practice.automationtesting.in/");
 	      
 	      // testing Shop link and Home link:
-	      driver. findElement(By.linkText("Shop")).click();
-	      driver.findElement(By.linkText("Home")).click();
-	      
-	       
-	      //testing there's 3 sliders or not
-	      //driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-0-0\"]/div/ul/li/a[2]")).click();
+	      //driver. findElement(By.linkText("Shop")).click();
+	      //driver.findElement(By.linkText("Home")).click();
 	     
 	   
-
           //testing all images of arrivals working or not
-	      driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-0-0\"]/div/ul/li/a[1]/img")).click();
-	      driver . findElement( By . xpath("//*[@id=\"site-logo\"]/a/img")).click();	     
 	      
+	      //slide 1
+	      //driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-0-0\"]/div/ul/li/a[1]/img")).click();
+	      //driver . findElement( By . xpath("//*[@id=\"site-logo\"]/a/img")).click();	     
 	      
 	      //slide 2
 	      //driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-1-0\"]/div/ul/li/a[1]/img")).click();
-	      //driver.navigate().back();
-	      //System.out.println("this is " + driver.getTitle() + " website");
-	      //System.out.println("url is: " + driver.getCurrentUrl());
-	      //slide 3
-	      //driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-2-0\"]/div/ul/li/a[1]/h3")).click();
-	      //driver.navigate().back();
-	      //System.out.println("this is " + driver.getTitle() + " website");
-	      //System.out.println("url is: " + driver.getCurrentUrl());
-	    //*[@id="themify_builder_content-22"]/div[2]/div/div/div/div/div[1]
+	      //driver . findElement( By . xpath("//*[@id=\"site-logo\"]/a/img")).click();
 	      
-	   
+	      //slide 3
+	      //driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-2-0\"]/div/ul/li/a[1]/img")).click();
+	      //driver . findElement( By . xpath("//*[@id=\"site-logo\"]/a/img")).click();
+	      
+	     // Testing Click on the "add to basket" button adds or not:
+	      driver . findElement ( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-0-0\"]/div/ul/li/a[2]")).click();
+	      driver . findElement ( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-1-0\"]/div/ul/li/a[2]")).click();
+	      driver . findElement ( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-2-0\"]/div/ul/li/a[2]")).click();
+	      
+	      // Clicking on Clicking on Description tab for the book you clicked on works or not.
+	      //for slide 1
+	      driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-0-0\"]/div/ul/li/a[1]/img")).click();
+	      driver . findElement( By . xpath("//*[@id=\"product-160\"]/div[3]/ul/li[1]/a")).click();
+	      //for slide 2
+	      
+	      
+	      // The description regarding that book the user clicked on should showing details or not..
+	        driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-0-0\"]/div/ul/li/a[1]/img")).click();
+	        driver . findElement( By . xpath("//*[@id=\"tab-description\"]")).click();
+	        driver . findElement( By . xpath("//*[@id=\"site-logo\"]/a/img")).click();
+	        
+	        driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-1-0\"]/div/ul/li/a[1]/img")).click();
+	        driver . findElement( By . xpath("//*[@id=\"tab-description\"]")).click();
+	        driver . findElement( By . xpath("//*[@id=\"site-logo\"]/a/img")).click();
+	        
+	        driver . findElement( By . xpath("//*[@id=\"text-22-sub_row_1-0-2-2-0\"]/div/ul/li/a[1]/img")).click();
+	        driver . findElement( By . xpath("//*[@id=\"tab-description\"]")).click();
+	        driver . findElement( By . xpath("//*[@id=\"site-logo\"]/a/img")).click();
 	      
 	      
 	    

@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 public class PriorityClass {
 
- 
+
 	 WebDriver browserObject;
 		// 1. The @Test is used along with priority and based on priority the method will exceute. The piority is set as 1 .So this will exceute first.
 		@Test(priority =1)
