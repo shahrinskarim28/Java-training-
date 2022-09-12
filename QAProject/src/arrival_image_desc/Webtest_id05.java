@@ -59,7 +59,7 @@ public class Webtest_id05 {
 	      
 	      
 	       // menu items wither the price list of books are showing or not
-	       driver. findElement(By.linkText("//*[@id=\"wpmenucartli\"]/a/i")).click();
+	       driver. findElement(By.xpath("//*[@id=\"wpmenucartli\"]/a/span[1]")).click();
 	}
 
 }
